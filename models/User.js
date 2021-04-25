@@ -7,8 +7,6 @@ const userSchema = mongoose.Schema({
   },
   email: {
     tpye: String,
-    trim: true,
-    unique: 1,
   },
   password: {
     type: String,
@@ -33,4 +31,4 @@ const userSchema = mongoose.Schema({
 
 const User = mongoose.model("User", userSchema);
 
-moudule.exports = { User };
+module.exports = { User };
